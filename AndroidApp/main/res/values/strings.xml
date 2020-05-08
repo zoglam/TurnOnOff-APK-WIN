@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WOL</string>
+    <string name="turn_on">turn on</string>
+    <string name="turn_off">turn off</string>
+    <string name="ip">IP</string>
+    <string name="mac">MAC</string>
+</resources>
