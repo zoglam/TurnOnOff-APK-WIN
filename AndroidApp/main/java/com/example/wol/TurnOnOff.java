@@ -32,7 +32,7 @@ public class TurnOnOff implements Runnable {
     @Override
     public void run() {
         String ipStr = ipAddress;
-        String macStr = "4C:72:B9:85:11:75";
+        String macStr = macAddress;
         try {
             DatagramSocket socket;
             byte[] macBytes = getMacBytes(macStr);
@@ -52,7 +52,7 @@ public class TurnOnOff implements Runnable {
             socket.close();
             Log.d("myLogs", "Good");
         } catch (Exception e) {
-            Log.d("myLogs", e.toString());
+            Log.d("myLogs", "BAD - " + e.toString());
         }
     }
 

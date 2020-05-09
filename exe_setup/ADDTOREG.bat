@@ -1,4 +1,3 @@
-cd %WINDIR%\..
-cd TurnOnOff
-reg add HKLM\Software\Microsoft\Windows\CurrentVersion\Run /v TurnOnOff /d "%cd%\hideConsole.vbs"
+cd %appdata%\TurnOnOff
+reg add HKCU\Software\Microsoft\Windows\CurrentVersion\Run /v TurnOnOff /d "%appdata%\TurnOnOff\hideConsole.bat" 
 pause
